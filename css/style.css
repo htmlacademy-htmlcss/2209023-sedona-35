@@ -1,0 +1,314 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/2209023-sedona-35/fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("/2209023-sedona-35/fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visibility-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  background-color: #ffffff;
+}
+
+
+body {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+  min-height: 100%;
+  font-size: 18px;
+  color: #000000;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+  height: 64px;
+  display: flex;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding-left: 70px;
+  padding-right: 0px;
+}
+
+.navigation-logo {
+  width: 140px;
+  height: 70px;
+  z-index: 1;
+}
+
+.navigation-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 0px;
+  margin-right: 227px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  }
+
+.navigation-item {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  }
+
+.navigation-item a {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  margin-right: 35px;
+}
+
+.navigation-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  text-align: center;
+}
+
+.navigation-controls li {
+  display: block;
+  padding-top: 20px;
+  padding-right: 12px;
+  padding-bottom: 20px;
+  padding-left: 12px;
+  position: relative;
+  justify-content: center;
+}
+
+.navigation-control-button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-left: 12px;
+}
+
+.navigation-button {
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 160px;
+  height: 36px;
+  border-radius: 4px;
+  padding: 8px, 50px, 8px, 50px;
+  color: #ffffff;
+  background-color: #756157;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  margin-left: 0;
+}
+
+.navigation-control-favorite::after {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  content: "12";
+  justify-content: center;
+  font-size: 10px;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: 25px;
+  border-radius: 10px;
+  background-color: #7db54f;
+}
+
+.banner-logo {
+  width: 458;
+  height: 352;
+  padding-left: 371px;
+  padding-right: 371px;
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
+.banner {
+  width: 100%;
+  height: 485px;
+  position: relative;
+  background-image: url(../images/content/sedona-bg.jfif);
+  background-repeat: no-repeat;
+}
+
+.banner::after {
+  position: absolute;
+  content: url(../images/content/Vector.svg);
+  width: 1200px;
+  height: 57px;
+  top: 428px;
+  left: 0px;
+}
+
+.info {
+  padding-top: 69px;
+  padding-bottom: 90px;
+}
+
+.info-title {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  padding-left: 290px;
+  padding-right: 290px;
+}
+
+.info-description {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* Преимущества */
+
+.advantages {
+  display: flex;
+  height: 384px;
+}
+
+.advantages-item  {
+  width: 400px;
+  background-color: #82B3D3;
+  margin: 0%;
+  padding: 92px;
+  box-sizing: border-box;
+}
+
+.advantages-item h3 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.advantages-item p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  list-style-type: none;
+  color: #ffffff;
+}
+
+.dash {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-image {
+  position: absolute;
+  width: 800px;
+  height: 384px;
+  list-style-type: none;
+  margin: 0%;
+  padding-left: 400px;
+}
+
+.service {
+  display: flex;
+  height: 384px;
+}
+
+.service-item {
+  width: 400px;
+  background: rgba(131, 179, 211, 0.12);
+  margin: 0%;
+  padding: 85px;
+  box-sizing: border-box;
+}
+
+.service-item h3 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.service-item p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  list-style-type: none;
+  color: #000000;
+}
+
+.blue-bg {
+  background-color: rgba(131, 179, 211, 0.3);
+}
+
+.white-bg {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.house-icon {
+  content: url(../images/icons/house-icon.svg);
+  margin: auto;
+}
+
+.food-icon {
+  content: url(../images/icons/food-icon.svg);
+  margin: auto;
+}
+
+.gift-icon {
+  content: url(../images/icons/gift-icon.svg);
+  margin: auto;
+}
