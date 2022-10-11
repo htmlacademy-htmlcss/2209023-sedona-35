@@ -104,12 +104,17 @@ body {
 
 .navigation-controls li {
   display: block;
-  padding-top: 20px;
+  padding-top: 24px;
   padding-right: 12px;
   padding-bottom: 20px;
   padding-left: 12px;
   position: relative;
   justify-content: center;
+}
+
+.navigation-control-items {
+  display: block;
+  position: relative;
 }
 
 .navigation-control-button {
@@ -118,28 +123,6 @@ body {
   justify-content: center;
   margin-bottom: 0;
   padding-left: 12px;
-}
-
-.navigation-button {
-  display: block;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  box-sizing: border-box;
-  width: 160px;
-  height: 36px;
-  border-radius: 4px;
-  padding: 8px, 50px, 8px, 50px;
-  color: #ffffff;
-  background-color: #756157;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 9px;
-  padding-bottom: 8px;
-  margin-left: 0;
 }
 
 .navigation-control-favorite::after {
@@ -156,6 +139,29 @@ body {
   left: 25px;
   border-radius: 10px;
   background-color: #7db54f;
+}
+
+.navigation-button {
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 160px;
+  height: 36px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #756157;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  margin-left: 12px;
+  margin-bottom: 14px;
+  margin-top: 14px;
+  box-sizing: border-box;
 }
 
 .banner-logo {
@@ -198,6 +204,7 @@ body {
   text-align: center;
   padding-left: 290px;
   padding-right: 290px;
+  text-transform: uppercase;
 }
 
 .info-description {
@@ -317,6 +324,16 @@ body {
   content: url(../images/icons/gift-icon.svg);
   margin: auto;
 }
+
+.find-hotel-info {
+  width: 1200px;
+  background: #756157;
+  margin: 0%;
+  padding: 96px;
+  box-sizing: border-box;
+}
+
+/* Подвал */
 
 /* footer {
   display: flex;
