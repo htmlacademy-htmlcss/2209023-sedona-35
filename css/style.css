@@ -113,7 +113,7 @@ body {
 }
 
 .navigation-control-button {
-  display: flex;
+  display: block;
   position: relative;
   justify-content: center;
   margin-bottom: 0;
@@ -317,3 +317,11 @@ body {
   content: url(../images/icons/gift-icon.svg);
   margin: auto;
 }
+
+/* footer {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  justify-content: space-between;
+  background-color: #ffffff;
+} */
