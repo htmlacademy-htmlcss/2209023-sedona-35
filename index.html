@@ -15,7 +15,7 @@
         <a class="navigation-logo" href="index.html"><img class="page-header-logo" src="images/content/logo.svg"
             alt="Логотип Седоны"></a>
         <!-- Навигационное меню -->
-        <div class="nav">
+        <div>
           <ul class="navigation-menu">
             <li class="navigation-item"><a href="index.html">Главная</a></li>
             <li class="navigation-item"><a href="#">О Седоне</a></li>
@@ -47,11 +47,11 @@
         <h1 class="visibility-hidden">Седона</h1>
         <img class="banner-logo" src="images/content/welcome.svg" alt="Welcome to the gorgeous Sedona">
       </section>
+      <!-- Информация на баннере -->
       <section class="info">
         <h2 class="info-title">Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="info-description">Рассмотрим причины, по которым Седона круче чем Гранд-Каньон</p>
       </section>
-
       <!-- Преимущества. 1 строка -->
       <section class="advantages">
         <h2 class="visibility-hidden">Преимущества.</h2>
@@ -138,7 +138,7 @@
       <section class="find-hotel">
         <div class="find-hotel-info">
           <p class="find-hotel-heading">Заинтересовались?</p>
-          <p class="find-hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="find-hotel-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="find-hotel-button" href="#">Поиск гостиницы в Седоне!</a>
         </div>
       </section>
@@ -146,12 +146,14 @@
       <section class="subscribe">
         <div class="subscribe-item">
           <p class="subscribe-heading">Подпишитесь на рассылку</p>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         </div>
-        <div class="subscribe">
-          <p class="subscribe-form"><input type="required" name="Ваш e-mail"></p>
-          <p class="subscribe-button"><input type="submit" value="Подписаться"></p>
-        </div>
+        <form action="#" method="get">
+          <div>
+            <input class="subscribe-form" type="email" name="E-mail" placeholder="Ваш e-mail">
+            <input class="subscribe-button" type="submit" value="Подписаться">
+          </div>
+        </form>
       </section>
     </main>
     <!-- Подвал -->

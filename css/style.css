@@ -45,7 +45,7 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Навигационное меню */
+/* Навигационное панель */
 
 .navigation {
   height: 64px;
@@ -56,11 +56,15 @@ body {
   padding-right: 70px;
 }
 
+/* Логотип */
+
 .navigation-logo {
   width: 140px;
   height: 70px;
   z-index: 1;
 }
+
+/* Навигационное меню */
 
 .navigation-menu {
   display: flex;
@@ -93,6 +97,8 @@ body {
   text-transform: none;
   margin-right: 35px;
 }
+
+/* Пользовательское меню */
 
 .navigation-controls {
   display: flex;
@@ -164,6 +170,8 @@ body {
   box-sizing: border-box;
 }
 
+/* Баннер */
+
 .banner-logo {
   width: 458;
   height: 352;
@@ -171,14 +179,6 @@ body {
   padding-right: 371px;
   padding-top: 51px;
   padding-bottom: 82px;
-}
-
-.banner {
-  width: 100%;
-  height: 485px;
-  position: relative;
-  background-image: url(../images/content/index-bg.jpg);
-  background-repeat: no-repeat;
 }
 
 .banner::after {
@@ -189,6 +189,16 @@ body {
   top: 428px;
   left: 0px;
 }
+
+.banner {
+  width: 100%;
+  height: 485px;
+  position: relative;
+  background-image: url(../images/content/index-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+/* Информация на баннере */
 
 .info {
   padding-top: 69px;
@@ -268,6 +278,8 @@ body {
   padding-left: 400px;
 }
 
+/* Сервис */
+
 .service {
   display: flex;
   height: 384px;
@@ -302,6 +314,8 @@ body {
   color: #000000;
 }
 
+/* Сервис иконки*/
+
 .blue-bg {
   background-color: rgba(131, 179, 211, 0.3);
 }
@@ -325,12 +339,145 @@ body {
   margin: auto;
 }
 
+/* Поиск гостиницы */
+
 .find-hotel-info {
+  display: block;
   width: 1200px;
-  background: #756157;
+  height: 406px;
+  background: #ffffff;
   margin: 0%;
-  padding: 96px;
+  padding-top: 96px;
+  padding-right: 304px;
+  padding-bottom: 96px;
+  padding-left: 304px;
   box-sizing: border-box;
+}
+
+.find-hotel-heading {
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 0;
+    color: #000000;
+}
+
+.find-hotel-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  list-style-type: none;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+
+.find-hotel-button {
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 390px;
+  height: 52px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #756157;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: auto;
+  margin-top: 54px;
+  box-sizing: border-box;
+}
+
+/* Подпись на рассылку */
+
+.subscribe {
+padding-top: 94px;
+  padding-bottom: 94px;
+  position: relative;
+  background-image: url(../images/content/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 96px;
+  padding-bottom: 104px;
+  text-align: center;
+}
+
+.subscribe-heading {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  list-style-type: none;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 54px;
+  position: relative;
+}
+
+/* Форма ввода e-mail */
+
+input {
+  position: relative;
+  display: inline-block;
+}
+
+input[type="email"] {
+    padding: 12px 20px;
+    width: 452px;
+    height: 52px;
+    background: #F2F2F2;
+    border-radius: 4px 0px 0px 4px;
+    padding: 0px;
+    border: none;
+    padding-left: 20px;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+input[type="submit"] {
+  width: 232px;
+  height: 52px;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  left: -5px;
+  top: 1px;
+  background-color: #82B3D3;
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 /* Подвал */
