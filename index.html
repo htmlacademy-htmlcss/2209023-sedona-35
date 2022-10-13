@@ -1,75 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon.png">
-  </head>
 
-  <body>
-    <!-- Навигационнеая панель -->
-    <header class="page-header">
-      <nav class="navigation">
-        <!-- Логотип -->
-        <a class="navigation-logo" href="index.html"><img class="page-header-logo" src="images/content/logo.svg"
-            alt="Логотип Седоны"></a>
-        <!-- Навигационное меню -->
-        <div>
-          <ul class="navigation-menu">
-            <li class="navigation-item"><a href="index.html">Главная</a></li>
-            <li class="navigation-item"><a href="#">О Седоне</a></li>
-            <li class="navigation-item"><a href="#">Гостиницы</a></li>
-          </ul>
-        </div>
-        <!-- Пользовательское меню -->
-        <div class="navigation-bloc">
-          <ul class="navigation-controls">
-            <a class="navigation-control-find" href="#">
-            <li class="navigation-control-items">
-                <img class="navigation-control-icon" src="images/icons/search.svg">
-                <span class="visibility-hidden">Поиск</span></a>
-            </li>
-            <li class="navigation-control-items">
-              <a class="navigation-control-favorite" href="#">
-                <img class="navigation-control-icon" src="images/icons/like.svg">
-                <span class="visibility-hidden">Избранное</span></a>
-            </li>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon.png">
+</head>
+
+<body>
+  <!-- Навигационнеая панель -->
+  <header class="page-header">
+    <!-- Логотип -->
+    <div class="logo">
+      <a class="navigation-logo" href="index.html"><img class="page-header-logo" src="images/content/logo.svg" alt="Логотип Седоны"></a>
+    </div>
+    <!-- Навигационное меню -->
+    <nav class="navigation">
+      <div class="navigation-menu">
+        <ul class="navigation-list">
+          <li class="navigation-item navigation-main-link"><a href="index.html">Главная</a></li>
+          <li class="navigation-item navigation-about-link"><a href="#">О Седоне</a></li>
+          <li class="navigation-item navigation-hotels-link"><a href="#">Гостиницы</a></li>
         </ul>
+      </div>
+      <!-- Пользовательское меню -->
+      <div class="navigation-bloc">
+        <ul class="navigation-controls">
+          <li class="navigation-control-items">
+            <img class="navigation-control-icon" src="images/icons/search.svg" alt="Поиск">
+            <a><span class="visibility-hidden">Поиск</span></a>
+          </li>
+          <li class="navigation-control-items">
+            <a class="navigation-control-favorite" href="#">
+              <img class="navigation-control-icon" src="images/icons/like.svg" alt="Избранное">
+              <span class="visibility-hidden">Избранное</span></a>
+          </li>
+        </ul>
+      </div>
+      <a class="navigation-button" href="#">Хочу сюда!</a>
+    </nav>
+  </header>
+  <!-- Основной блок -->
+  <main class="main-index">
+    <!-- Баннер -->
+    <section class="banner">
+      <h1 class="visibility-hidden">Седона</h1>
+      <img class="banner-logo" src="images/content/welcome.svg" alt="Welcome to the gorgeous Sedona">
+    </section>
+    <!-- Информация на баннере -->
+    <section class="info">
+      <h2 class="info-title">Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="info-description">Рассмотрим причины, по которым Седона круче чем Гранд-Каньон</p>
+    </section>
+    <!-- Преимущества. 1 строка -->
+    <section class="advantages">
+      <h2 class="visibility-hidden">Преимущества.</h2>
+      <div class="advantages">
+        <div class="advantages-item">
+          <h3 class="advantages-description">Настоящий городок</h3>
+          <svg class="dash" width="60" height="2" viewBox="0 0 60 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="2" fill="white" fill-opacity="0.3" />
+          </svg>
+          <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <a class="navigation-button" href="#">Хочу сюда!</a>
-      </nav>
-    </header>
-    <!-- Основной блок -->
-    <main class="main-index">
-      <!-- Баннер -->
-      <section class="banner">
-        <h1 class="visibility-hidden">Седона</h1>
-        <img class="banner-logo" src="images/content/welcome.svg" alt="Welcome to the gorgeous Sedona">
-      </section>
-      <!-- Информация на баннере -->
-      <section class="info">
-        <h2 class="info-title">Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="info-description">Рассмотрим причины, по которым Седона круче чем Гранд-Каньон</p>
-      </section>
-      <!-- Преимущества. 1 строка -->
-      <section class="advantages">
-        <h2 class="visibility-hidden">Преимущества.</h2>
-        <div class="advantages">
-          <div class="advantages-item">
-            <h3 class="advantages-description">Настоящий городок</h3>
-            <svg class="dash" width="60" height="2" viewBox="0 0 60 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="60" height="2" fill="white" fill-opacity="0.3" />
-            </svg>
-            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </div>
-          <div class="advantages-image">
-            <img src="images/content/photo-1.png" alt="" class="advantages-1-photo">
-          </div>
+        <div class="advantages-image">
+          <img src="images/content/photo-1.png" alt="" class="advantages-1-photo">
         </div>
-      </section>
-      <!-- Сервис.  2 строка -->
-      <section class="service">
+      </div>
+    </section>
+    <!-- Сервис.  2 строка -->
+    <section class="service">
       <div class="service">
         <div class="service-item">
           <h3 class="advantages-description">Небольшая площадь</h3>
@@ -78,108 +79,114 @@
           </svg>
           <p class="advantages-description">Все достопримечательности находятся очень близко</p>
         </div>
-        <div class="service">
-          <div class="service-item blue-bg">
-            <h3 class="advantages-description">Красивая<br>дорога</h3>
-            <svg class="dash" width="60" height="2" viewBox="0 0 60 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="60" height="2" fill="black" fill-opacity="0.3" />
-            </svg>
-            <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service-item">
-            <h3 class="advantages-description">Мало<br>туристов</h3>
-            <svg class="dash" width="60" height="2" viewBox="0 0 60 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="60" height="2" fill="black" fill-opacity="0.3" />
-            </svg>
-            <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-        </div>
-        </section>
-      <!-- Преимущества. 3 строка -->
-      <section class="advantages">
-        <div class="advantages-image-reverse">
-            <img src="images/content/photo-2.png" alt="Красивый вид каньонов долины Седона">
-          </div>
-          <div class="advantages-item">
-            <h3 class="advantages-description-reverse">Там есть мост дьявола</h3>
-            <svg class="dash" width="60" height="2" viewBox="0 0 60 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="60" height="2" fill="white" fill-opacity="0.3" />
-            </svg>
-            <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-        </div>
-      </section>
-      <!-- Сервис.  4 строка -->
-      <section class="service">
-        <div class="service">
-          <div class="service-item">
-            <p class="house-icon"></p>
-            <h3 class="advantages-description">Жильё</h3>
-            <p class="advantages-description">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service-item white-bg">
-            <p class="food-icon"></p>
-            <h3 class="advantages-description">Еда</h3>
-            <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service-item">
-            <p class="gift-icon"></p>
-            <h3 class="advantages-description">Сувениры</h3>
-            <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
-          </div>
-        </div>
-      </section>
-      <!-- Поиск гостиницы -->
-      <section class="find-hotel">
-        <div class="find-hotel-info">
-          <p class="find-hotel-heading">Заинтересовались?</p>
-          <p class="find-hotel-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="find-hotel-button" href="#">Поиск гостиницы в Седоне!</a>
-        </div>
-      </section>
-      <!-- Подпись на рассылку -->
-      <section class="subscribe">
-        <div class="subscribe-item">
-          <p class="subscribe-heading">Подпишитесь на рассылку</p>
-          <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-        </div>
-        <form action="#" method="get">
-          <div>
-            <input class="subscribe-form" type="email" name="E-mail" placeholder="Ваш e-mail">
-            <input class="subscribe-button" type="submit" value="Подписаться">
-          </div>
-        </form>
-      </section>
-    </main>
-    <!-- Подвал -->
-    <footer>
-      <div class="social">
-        <a class="" href="#">
-          <img class="navigation-control-icon" src="images/icons/social-vk.svg">
-          <span class="visibility-hidden">Группа в вконтакте</span>
-        </a>
-        <a class="" href="#">
-          <img class="navigation-control-icon" src="images/icons/social-telegram.svg">
-          <span class="visibility-hidden">Канал в Телеграм</span>
-        </a>
-        <a class="" href="#">
-          <img class="navigation-control-icon" src="images/icons/social-youtube.svg">
-          <span class="visibility-hidden">Ютуб канал</span>
-        </a>
       </div>
-      <div class="footer-tel">
-        <a class="telephone-number" href="tel:+78128121212"> +7 (812) 812-12-12</a>
+      <div class="service">
+        <div class="service-item blue-bg">
+          <h3 class="advantages-description">Красивая<br>дорога</h3>
+          <svg class="dash" width="60" height="2" viewBox="0 0 60 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="2" fill="black" fill-opacity="0.3" />
+          </svg>
+          <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
       </div>
-      <div class="footer-logo">
-          <img class="navigation-control-icon" src="images/icons/logo_htmlacademy.svg">
-          <span class="visibility-hidden">Ютуб канал</span>
-        </p>
+      <div class="service">
+        <div class="service-item">
+          <h3 class="advantages-description">Мало<br>туристов</h3>
+          <svg class="dash" width="60" height="2" viewBox="0 0 60 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="2" fill="black" fill-opacity="0.3" />
+          </svg>
+          <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <!-- Преимущества. 3 строка -->
+    <section class="advantages">
+      <div class="advantages-image-reverse">
+        <img src="images/content/photo-2.png" alt="Красивый вид каньонов долины Седона">
+      </div>
+      <div class="advantages-item">
+        <h3 class="advantages-description-reverse">Там есть мост дьявола</h3>
+        <svg class="dash" width="60" height="2" viewBox="0 0 60 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="60" height="2" fill="white" fill-opacity="0.3" />
+        </svg>
+        <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+      </div>
+    </section>
+    <!-- Сервис.  4 строка -->
+    <section class="service">
+      <div class="service">
+        <div class="service-item">
+          <p class="house-icon"></p>
+          <h3 class="advantages-description">Жильё</h3>
+          <p class="advantages-description">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+        </div>
+      </div>
+      <div class="service">
+        <div class="service-item white-bg">
+          <p class="food-icon"></p>
+          <h3 class="advantages-description">Еда</h3>
+          <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+      </div>
+      <div class="service">
+        <div class="service-item">
+          <p class="gift-icon"></p>
+          <h3 class="advantages-description">Сувениры</h3>
+          <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
+        </div>
+      </div>
+    </section>
+    <!-- Поиск гостиницы -->
+    <section class="find-hotel">
+      <h2 class="visibility-hidden">Поиск гостиницы в Седоне!</h2>
+      <div class="find-hotel-info">
+        <p class="find-hotel-heading">Заинтересовались?</p>
+        <p class="find-hotel-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+          гостиниц в Седоне</p>
+        <a class="find-hotel-button" href="#">Поиск гостиницы в Седоне!</a>
+      </div>
+    </section>
+    <!-- Подпись на рассылку -->
+    <section class="subscribe">
+      <h2 class="visibility-hidden">Подписаться на рассылку.</h2>
+      <div class="subscribe-item">
+        <p class="subscribe-heading">Подпишитесь на рассылку</p>
+        <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+      </div>
+      <form action="#" method="get">
+        <div>
+          <input class="subscribe-form" type="email" name="E-mail" placeholder="Ваш e-mail">
+          <input class="subscribe-button" type="submit" value="Подписаться">
+        </div>
+      </form>
+    </section>
+  </main>
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="socials">
+      <a class="socials-link" href="https://vk.com/htmlacademy" target="_blank">
+        <img class="social-vk" src="images/icons/social-vk.svg" alt="Группа в вконтакте">
+        <span class="visibility-hidden">Группа в вконтакте</span>
+      </a>
+      <a class="socials-link" href="https://t.me/htmlacademy" target="_blank">
+        <img class="social-telegram" src="images/icons/social-telegram.svg" alt="Канал в Телеграм">
+        <span class="visibility-hidden">Канал в Телеграм</span>
+      </a>
+      <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+        <img class="social-youtube" src="images/icons/social-youtube.svg" alt="Ютуб канал">
+        <span class="visibility-hidden">Ютуб канал</span>
+      </a>
+    </div>
+    <div class="footer-tel-link">
+      <a class="telephone-number" href="tel:+78128121212"> +7 (812) 812-12-12</a>
+    </div>
+    <div class="footer-logo">
+      <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/" target="_blank">
+        <img class="footer-logo-img" src="images/icons/logo_htmlacademy.svg" alt="Перейти на сайт разработчика">
+        <span class="visibility-hidden">Сайт разработчика</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
